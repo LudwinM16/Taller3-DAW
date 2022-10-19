@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>localstorage</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<h1 class="tt">Mecanica "Don Bosco" </h1>
+
+	<div class="contenedor">
+		<div>
+			
+			<div class="datos">
+
+				<form id="formulario">
+					<div class="todo">
+					<div class="persona">
+					 	<h2>Datos del dueño</h2>
+
+						<div>
+							<label>Nombre:</label>
+							<input type="text" name="nombre" id="nombre" placeholder="Digita tu nombre" >
+						</div>
+						<div>
+							<label>DUI:</label>
+							<input type="text" name="dui" id="dui" placeholder="Digita tu DUI">
+						</div>
+						<div>
+							<label>NIT:</label>
+							<input type="text" name="nit" id="nit" placeholder="Digita tu NIT">
+						</div>
+					</div>
+					<div class="carrito">
+						<h2>Datos del automovil</h2>
+						<div>
+							<label>Marca del vehiculo</label>
+							<select name="marca" id="marca" onchange="cargarModelos();">
+                   				<option value="">Seleccione una marca...</option>
+              				 </select>
+						</div>
+						<div>
+							<label>Modelo del vehiculo</label>
+							<select name="modelo" id="modelo">
+                 				<option value="">Seleccione un modelo...</option>
+               				</select>
+						</div>
+						<div>
+							<label>Año del vehiculo:</label>
+							<input type="number" name="year" id="year" min="1990" max="2022" placeholder="Selecciona el año de tu vehiculo" required="">
+						</div>
+						<div>
+							<label>Color del vehiculo:</label>
+						<select name="color" id="color">
+							<option value="Verde">Verde</option>
+							<option value="Azul">Azul</option>
+							<option value="Rojo">Rojo</option>
+							<option value="Amarillo">Amarillo</option>
+							<option value="Gris">Gris</option>
+							<option value="Negro">Negro</option>
+							<option value="Blanco">Blanco</option>
+						</select>
+						</div>
+						<div>
+							<label>Placa del vehiculo:</label>
+							<input type="text" name="placa" id="placa" placeholder="Digite su placa">
+						</div>
+						<div>
+							<label>Fallas del vehiculo</label>
+							<input type="text" name="fallas" id="fallas" placeholder="Digite la falla de su carro">
+						</div>
+					</div>
+				</div>
+					<a href = '#' class="boton" id="btnAgregar">Agregar Carro</a>
+				</form>
+			</div>
+			<div class="tabla">
+				<h2>Estudiantes registrados Tercer año</h2>
+				<table id="tblCarros">
+					<thead>
+						<tr>
+							<th>Nombre</th>
+							<th>DUI</th>
+							<th>NIT</th>
+							<th>Marca</th>
+							<th>Modelo</th>
+							<th>Año</th>
+							<th>Color</th>
+							<th>Placa</th>
+							<th>Falla</th>
+						</tr>
+					</thead>
+					<tbody id="tbody">
+						<tr>
+							
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<footer>Hecho por: Carlos Adalberto Campos Hernández #7 - Ludwin Enrique Martínez Alfaro #21</footer>
+
+	<script src="js/mecanica.js"></script>
+	<script src="js/marcasModelos.js"></script>
+</body>
+</html>
